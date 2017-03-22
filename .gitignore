@@ -1,4 +1,6 @@
 # data volumes
-*/data/
-*/*/data/
+docker-volumes/
+
+# no git folder
+no-git/
 

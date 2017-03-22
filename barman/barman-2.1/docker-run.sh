@@ -14,8 +14,10 @@ BARMAN_CONFIG="/etc/barman.d/"
 BARMAN_LIB="/var/lib/barman/"
 POSTGRES_DATA="/var/lib/postgresql/data/"
 
+DOCKER_VOLUMES="${PWD}/docker-volumes/"
+
 PORT_POSTGRES="192.168.168.167:7432:5432"
 PORT_SSH="192.168.168.167:7022:22"
 
-docker run $DAEMON -p $PORT_POSTGRES -p $PORT_SSH -v $PWD/data/barman_lib:$BARMAN_LIB -v  $PWD/data/barman.d:$BARMAN_CONFIG -v $PWD/data/pgdata:$POSTGRES_DATA -v $PWD/data/home:$HOME $IMAGE_NAME:$TAG
+docker run $DAEMON -p $PORT_POSTGRES -p $PORT_SSH -v ${DOCKER_VOLUMES}barman.d:$BARMAN_CONFIG -v ${DOCKER_VOLUMES}pgdata:$POSTGRES_DATA -v ${DOCKER_VOLUMES}home:$HOME $IMAGE_NAME:$TAG
 
