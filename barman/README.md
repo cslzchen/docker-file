@@ -111,3 +111,30 @@ Replication in `$PGDATA/postgresql.conf`
 max_wal_senders = 3
 max_replication_slots = 3
 ```
+
+
+## Run Barman Backup
+
+### Start Barman Cron
+
+`barman cron`
+
+### Trigger the Archiving Process
+
+`barman switch-xlog --force --archive <server_name>`
+
+### Check Barman Status
+
+`barman check <server_name>`
+
+### Start Backup
+
+`barman backup <server_name>`
+
+### View Backup
+
+`barman list-backup <server_name>`
+
+### Restore
+
+`barman recover <server_name> <backup_id> <path_to_recover_dir>`
