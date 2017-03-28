@@ -7,7 +7,7 @@ else
 fi
 
 IMAGE_NAME="postgres-9.6"
-TAG="0.20"
+TAG="0.30"
 
 HOME="/root/"
 POSTGRES_DATA="/var/lib/postgresql/data/"
