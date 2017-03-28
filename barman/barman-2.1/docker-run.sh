@@ -7,11 +7,10 @@ else
 fi
 
 IMAGE_NAME="barman-2.1"
-TAG="0.20"
+TAG="0.30"
 
 HOME="/root/"
 BARMAN_CONFIG="/etc/barman.d/"
-BARMAN_LIB="/var/lib/barman/"
 POSTGRES_DATA="/var/lib/postgresql/data/"
 
 DOCKER_VOLUMES="${PWD}/docker-volumes/"
