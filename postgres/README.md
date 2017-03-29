@@ -1,2 +1,0 @@
-Docker Configuration for Postgres.
-
