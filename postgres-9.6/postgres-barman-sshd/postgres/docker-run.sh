@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IMAGE_NAME="postgres"
-TAG="0.40"
+TAG="0.50s"
 
 POSTGRES_DATA="/var/lib/postgresql/data/"
 DOCKER_VOLUMES="${PWD}/volumes/"
