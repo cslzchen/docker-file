@@ -3,5 +3,6 @@
 IMAGE_NAME="barman"
 TAG="0.50"
 
-docker run $IMAGE_NAME:$TAG
+docker stop $IMAGE_NAME && docker rm $IMAGE_NAME
+docker run --name=$IMAGE_NAME $IMAGE_NAME:$TAG
 
